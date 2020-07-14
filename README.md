@@ -23,3 +23,4 @@
     * contains a sample spec file.
   * travis for CI
   * additional ghc options for warnings
+  * my settings for hlint
