@@ -6,7 +6,7 @@ templates:
     #  copyright:
     github-username: rinse
 
-default-template: https://raw.githubusercontent.com/rinse/stack-templates/master/templates/rinse.hsfiles
+default-template: https://raw.githubusercontent.com/rinse/stack-templates/master/templates/default.hsfiles
 
 docker:
   enable: false

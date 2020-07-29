@@ -16,7 +16,7 @@
 
 ## Templates
 
-* [rinse.hsfiles](templates/rinse.hsfiles)
+* [default.hsfiles](templates/default.hsfiles)
   * a template for my personal project
   * hspec + doctest for testing
     * contains a sample file with sample haddock comments.
