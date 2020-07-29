@@ -8,8 +8,12 @@ maintainer:          "{{author-email}}{{^author-email}}example@example.com{{/aut
 copyright:           "{{copyright}}{{^copyright}}{{year}}{{^year}}2019{{/year}} {{author-name}}{{^author-name}}Author name here{{/author-name}}{{/copyright}}"
 
 extra-source-files:
+- .gitignore
+- .hlint.yaml
+- LICENSE
 - README.md
-- ChangeLog.md
+- package.yaml
+- stack.yaml
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -140,11 +144,6 @@ main = putStrLn "Hello, {{name}}!"
 {-# START_FILE README.md #-}
 # {{name}}
 
-{-# START_FILE ChangeLog.md #-}
-# Changelog for {{name}}
-
-## Unreleased changes
-
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) {{year}}{{^year}}2019{{/year}}
 
@@ -182,9 +181,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 {{name}}.cabal
 bin
 *~
-
-{-# START_FILE .travis.yml #-}
-language: haskell
 
 {-# START_FILE .hlint.yaml #-}
 # HLint configuration file
