@@ -1,0 +1,13 @@
+templates:
+  scm-init: git
+  params:
+    author-name: rinse
+    author-email: rinse@neko2.net
+    #  copyright:
+    github-username: rinse
+
+default-template: https://raw.githubusercontent.com/rinse/stack-templates/master/templates/rinse.hsfiles
+
+docker:
+  enable: false
+  repo: utdemir/ghc-musl:v7-libgmp-ghc883

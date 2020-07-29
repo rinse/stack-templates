@@ -24,3 +24,16 @@
   * travis for CI
   * additional ghc options for warnings
   * my settings for hlint
+* [with-standalone.hsfiles](templates/with-standalone.hsfiles)
+  * basically same as the default but it contains a few additional items* which are:
+    * Dockerfile
+      * generates a docker image to run the output binary.
+    * docker-build.sh
+      * triggers docker build.
+  * it requires your stack.yaml to have the following.
+
+```yaml
+docker:
+  enable: false
+  repo: utdemir/ghc-musl:v7-libgmp-ghc883
+```
